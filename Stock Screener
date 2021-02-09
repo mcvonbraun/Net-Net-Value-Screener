@@ -3,7 +3,7 @@ import pandas as pd
 
 NetCurrentAssetValueperShare = {}
 
-querytickers = requests.get(f'https://financialmodelingprep.com/api/v3/search?query=&limit=1000&exchange=NASDAQ')
+querytickers = requests.get(f'https://financialmodelingprep.com/api/v3/quotes/index')
 querytickers = querytickers.json()
 
 list_500 = querytickers
